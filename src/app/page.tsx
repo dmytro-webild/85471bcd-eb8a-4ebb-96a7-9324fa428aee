@@ -88,9 +88,9 @@ export default function LandingPage() {
             gridVariant="uniform-all-items-equal"
             useInvertedBackground={false}
             products={[
-              { id: "p1", brand: "Veneers", name: "Case Study 1", price: "Before/After", rating: 5, reviewCount: "120", imageSrc: "http://img.b2bpic.net/free-photo/female-facial-beautiful-clean-fresh_1301-1935.jpg" },
-              { id: "p2", brand: "Whitening", name: "Case Study 2", price: "Before/After", rating: 5, reviewCount: "98", imageSrc: "http://img.b2bpic.net/free-photo/mixed-race-black-blonde-model-with-curly-hair-closeup-mouth-painted-with-bright-blue-lipstick-smiling-watching-camera_633478-803.jpg" },
-              { id: "p3", brand: "Braces", name: "Case Study 3", price: "Before/After", rating: 5, reviewCount: "156", imageSrc: "http://img.b2bpic.net/free-photo/image-cheerful-beautiful-young-lifestyle-blogger-woman-sitting-floor-recording-video-about_1258-255219.jpg" },
+              { id: "p1", brand: "Fillings ", name: "Fillings ", price: "Before/After", rating: 5, reviewCount: "120", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dtkuli0tdBMKGcMqSnb5gG6iWC/uploaded-1779115214695-cymy6yrc.jpg" },
+              { id: "p2", brand: "Whitening", name: "Teeth whitining ", price: "Before/After", rating: 5, reviewCount: "98", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dtkuli0tdBMKGcMqSnb5gG6iWC/uploaded-1779115233436-x0lug7g6.jpg" },
+              { id: "p3", brand: "Braces", name: "Braces ", price: "Before/After", rating: 5, reviewCount: "156", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dtkuli0tdBMKGcMqSnb5gG6iWC/uploaded-1779115434119-iog12a8j.jpg" },
               { id: "p4", brand: "Fillings", name: "Case Study 4", price: "Before/After", rating: 5, reviewCount: "84", imageSrc: "http://img.b2bpic.net/free-photo/closeup-smiling-woman-making-frame-gesture_1262-1764.jpg" },
               { id: "p5", brand: "Cosmetic", name: "Case Study 5", price: "Before/After", rating: 5, reviewCount: "112", imageSrc: "http://img.b2bpic.net/free-photo/front-close-view-young-girl-smiling-pink_179666-1708.jpg" },
               { id: "p6", brand: "Smile Design", name: "Case Study 6", price: "Before/After", rating: 5, reviewCount: "140", imageSrc: "http://img.b2bpic.net/free-photo/positive-dreamy-young-lady-with-hand-cheek_23-2148054963.jpg" },
@@ -107,8 +107,8 @@ export default function LandingPage() {
             gridVariant="bento-grid"
             useInvertedBackground={true}
             metrics={[
-              { id: "m1", value: "1000+", title: "Happy Patients", description: "Successfully treated patients across Egypt.", icon: Smile },
-              { id: "m2", value: "15+", title: "Years Experience", description: "Deep expertise in cosmetic dentistry.", icon: Award },
+              { id: "m1", value: "100", title: "Happy Patients", description: "Successfully treated patients across Egypt.", icon: Smile },
+              { id: "m2", value: "10+", title: "Years Experience", description: "Deep expertise in cosmetic dentistry.", icon: Award },
               { id: "m3", value: "4.9/5", title: "Google Reviews", description: "Highly trusted by our local community.", icon: Star },
             ]}
             title="Proven Excellence"
