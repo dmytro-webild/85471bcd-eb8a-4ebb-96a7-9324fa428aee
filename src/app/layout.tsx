@@ -10,8 +10,8 @@ import { getVisualEditScript } from "@/utils/visual-edit-script";
 
 
 export const metadata: Metadata = {
-  title: 'Your Dent Clinic | Cairo Cosmetic Dentistry',
-  description: 'Professional cosmetic dental clinic in Cairo, Egypt. Specializing in whitening, braces, and veneers. Trust our experts for your perfect smile.',
+  title: "Your Dent Clinic |  Cosmetic Dentistry",
+  description: "Professional cosmetic dental clinic in Cairo, Egypt. Specializing in whitening, braces, and veneers. Trust our experts for your perfect smile.",
 };
 
 const inter = Inter({
