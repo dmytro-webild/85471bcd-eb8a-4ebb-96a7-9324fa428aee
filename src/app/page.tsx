@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import HeroBillboardDashboard from '@/components/sections/hero/HeroBillboardDashboard';
+import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
@@ -41,30 +41,29 @@ export default function LandingPage() {
         </div>
 
         <div id="hero" data-section="hero">
-          <HeroBillboardDashboard
-            background={{ variant: "gradient-bars" }}
+          <HeroOverlayTestimonial
             title="Let's Make Your Smile Shine"
             description="See real results from our clients. Book your appointment with Egypt's trusted cosmetic dentistry experts."
             buttons={[{ text: "Book your appointment", href: "#contact" }]}
-            dashboard={{
-              title: "Clinic Overview",              stats: [
-                { title: "Patients", values: [100, 120, 110], description: "Total patients served", titleMobile: "Patients" },
-                { title: "Treatments", values: [50, 60, 55], description: "Successful treatments", titleMobile: "Treatments"  },
-                { title: "Reviews", values: [4, 5, 4.5], valueSuffix: "/5", description: "Average rating", titleMobile: "Reviews"  },
-              ],
-              logoIcon: Activity,
-              sidebarItems: [
-                { icon: Activity, active: true },
-                { icon: Heart },
-                { icon: Star },
-              ],
-              buttons: [{ text: "Book your appointment", href: "#contact" }],
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dtkuli0tdBMKGcMqSnb5gG6iWC/uploaded-1779114606361-00tpxw48.png",              listItems: [
-                { icon: Zap, title: "New Patient Consult", status: "New" },
-                { icon: Heart, title: "Whitening Session", status: "Completed" },
-                { icon: ShieldCheck, title: "Braces Adjustment", status: "Upcoming" },
-              ],
-            }}
+            testimonials={[
+              {
+                name: "Amira Ahmed",                handle: "@amira.a",                testimonial: "My smile transformation was incredible! Highly recommend Your Dent Clinic.",                rating: 5,
+                imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiley-adult-woman-dentist_23-2148396159.jpg"
+              },
+              {
+                name: "Mostafa Hassan",                handle: "@mostafa.h",                testimonial: "Professional and caring staff. The results exceeded my expectations.",                rating: 5,
+                imageSrc: "http://img.b2bpic.net/free-photo/joyful-beautiful-blonde-woman-wearing-white-shirt-standing-co-working-space-leaning-desk_74855-15168.jpg"
+              },
+              {
+                name: "Layla Mahmoud",                handle: "@layla.m",                testimonial: "They made me feel comfortable and confident throughout my treatment.",                rating: 5,
+                imageSrc: "http://img.b2bpic.net/free-photo/male-doctor-talking-patient-showing-dental-jaw_23-2147862033.jpg"
+              },
+            ]}
+            imageSrc="http://img.b2bpic.net/free-photo/positive-dreamy-young-lady-with-hand-cheek_23-2148054963.jpg"
+            imageAlt="Smiling lady after dental treatment"
+            showDimOverlay={true}
+            showBlur={true}
+            textPosition="bottom"
           />
         </div>
 
