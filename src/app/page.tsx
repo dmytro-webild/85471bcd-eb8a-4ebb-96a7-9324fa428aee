@@ -6,7 +6,7 @@ import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardTwentyThree from '@/components/sections/feature/FeatureCardTwentyThree';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import HeroSplit from '@/components/sections/hero/HeroSplit';
+import HeroBillboardDashboard from '@/components/sections/hero/HeroBillboardDashboard';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
@@ -41,28 +41,30 @@ export default function LandingPage() {
         </div>
 
         <div id="hero" data-section="hero">
-          <HeroSplit
+          <HeroBillboardDashboard
             background={{ variant: "gradient-bars" }}
             title="Let's Make Your Smile Shine"
             description="See real results from our clients. Book your appointment with Egypt's trusted cosmetic dentistry experts."
             buttons={[{ text: "Book your appointment", href: "#contact" }]}
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dtkuli0tdBMKGcMqSnb5gG6iWC/uploaded-1779114606361-00tpxw48.png"
-            mediaAnimation="slide-up"
-            avatars={[
-              { src: "http://img.b2bpic.net/free-photo/portrait-dentist-patient-smiling_23-2148396176.jpg", alt: "Portrait of dentist and patient smiling" },
-              { src: "http://img.b2bpic.net/free-photo/woman-showing-her-teeth-clinic_107420-65383.jpg", alt: "Woman showing her teeth in clinic" },
-              { src: "http://img.b2bpic.net/free-photo/portrait-beautiful-woman-dentist_23-2148396149.jpg", alt: "Portrait of beautiful woman at the dentist" },
-              { src: "http://img.b2bpic.net/free-photo/young-female-patient-bed-physiotherapy-center_1139-1121.jpg", alt: "Young female patient on bed in a physiotherapy center." },
-              { src: "http://img.b2bpic.net/free-photo/portrait-smiling-young-woman-sitting-chair-dental-clinic_662251-2583.jpg", alt: "Portrait of smiling young woman sitting on chair at dental clinic" },
-            ]}
-            avatarText="Trusted by 1000+ happy patients across Egypt."
-            marqueeItems={[
-              { type: "text-icon", text: "Expert Care", icon: ShieldCheck },
-              { type: "text-icon", text: "Modern Tech", icon: Activity },
-              { type: "text-icon", text: "Top Rated", icon: Star },
-              { type: "text-icon", text: "Fast Results", icon: Zap },
-              { type: "text-icon", text: "Gentle Dentistry", icon: Heart },
-            ]}
+            dashboard={{
+              title: "Clinic Overview",              stats: [
+                { title: "Patients", values: [100, 120, 110], description: "Total patients served", titleMobile: "Patients" },
+                { title: "Treatments", values: [50, 60, 55], description: "Successful treatments", titleMobile: "Treatments"  },
+                { title: "Reviews", values: [4, 5, 4.5], valueSuffix: "/5", description: "Average rating", titleMobile: "Reviews"  },
+              ],
+              logoIcon: Activity,
+              sidebarItems: [
+                { icon: Activity, active: true },
+                { icon: Heart },
+                { icon: Star },
+              ],
+              buttons: [{ text: "Book your appointment", href: "#contact" }],
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dtkuli0tdBMKGcMqSnb5gG6iWC/uploaded-1779114606361-00tpxw48.png",              listItems: [
+                { icon: Zap, title: "New Patient Consult", status: "New" },
+                { icon: Heart, title: "Whitening Session", status: "Completed" },
+                { icon: ShieldCheck, title: "Braces Adjustment", status: "Upcoming" },
+              ],
+            }}
           />
         </div>
 
