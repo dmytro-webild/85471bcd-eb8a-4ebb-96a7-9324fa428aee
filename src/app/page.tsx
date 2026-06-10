@@ -4,13 +4,13 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import FeatureCardTwentyThree from '@/components/sections/feature/FeatureCardTwentyThree';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroBillboardDashboard from '@/components/sections/hero/HeroBillboardDashboard';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
+import TextAbout from '@/components/sections/about/TextAbout';
 import { Activity, Award, Heart, ShieldCheck, Smile, Star, Zap } from "lucide-react";
 
 export default function LandingPage() {
@@ -32,7 +32,7 @@ export default function LandingPage() {
           <NavbarStyleApple
             navItems={[
               { name: "Home", id: "hero" },
-              { name: "Services", id: "services" },
+              { name: "About Us", id: "services" },
               { name: "Results", id: "results" },
               { name: "Contact", id: "contact" },
             ]}
@@ -69,17 +69,12 @@ export default function LandingPage() {
         </div>
 
         <div id="services" data-section="services">
-          <FeatureCardTwentyThree
-            animationType="slide-up"
-            textboxLayout="split"
+          <TextAbout
+            tag="About Us"
+            title="Our Commitment to Your Perfect Smile: Experienced Dental Care for Lasting Results."
+            buttons={[{ text: "Discover Our Story", href: "#hero" }]} 
+            buttonAnimation="slide-up"
             useInvertedBackground={true}
-            features={[
-              { id: "s1", title: "Teeth Whitening", tags: ["Whitening"], imageSrc: "http://img.b2bpic.net/free-photo/dermatologist-female-patient-discussing-digital-tablet_107420-65415.jpg" },
-              { id: "s2", title: "Professional Fillings", tags: ["Restorative"], imageSrc: "http://img.b2bpic.net/free-photo/man-dentist-s-appointment_1321-4592.jpg" },
-              { id: "s3", title: "Orthodontic Braces", tags: ["Alignment"], imageSrc: "http://img.b2bpic.net/free-photo/dental-care-tooth-decay-concept-curly-young-woman-uses-dental-floss-wears-headband-casual-striped-t-shirt-has-perfect-smile-looks-away-isolated-blue-studio-background-teeth-flossing_273609-60927.jpg" },
-            ]}
-            title="Our Cosmetic Services"
-            description="Professional treatments for a brighter, healthier smile."
           />
         </div>
 
